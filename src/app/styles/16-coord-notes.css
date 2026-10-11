@@ -1,0 +1,2 @@
+.m-field__coord { display: block; margin-top: var(--spacing-4); font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-warn); }
+.m-queue__coord { margin: var(--spacing-16) 0 0; }

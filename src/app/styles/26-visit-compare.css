@@ -1,0 +1,15 @@
+.m-legend {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--spacing-8) var(--spacing-16); margin-top: var(--spacing-12); padding: var(--spacing-12) var(--spacing-16);
+  border-radius: var(--radius-12); background: var(--c-surface-2); font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-2);
+}
+.m-legend b { font-weight: var(--font-weight-700); color: var(--c-ink); }
+.m-tag--chg { background: var(--c-border-tint); color: var(--c-action-deep); }
+.m-field__value .m-tag--chg { margin-left: var(--spacing-8); vertical-align: 1px; }
+.m-field[data-changed="1"] { box-shadow: inset 3px 0 0 var(--c-chip-on); }
+.m-field__prev { display: block; margin-top: var(--spacing-2); font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); }
+.m-srail__chg {
+  height: 20px; padding: 0 var(--spacing-6); border-radius: var(--radius-full); display: inline-flex; align-items: center; flex: none;
+  font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; background: var(--c-border-tint); color: var(--c-action-deep);
+}
+.m-overline { font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); margin-bottom: var(--spacing-4); }
+

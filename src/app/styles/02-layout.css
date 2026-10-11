@@ -1,0 +1,11 @@
+.m-wrap { max-width: 1280px; margin: 0 auto; padding: var(--spacing-24) var(--spacing-32) 96px; }
+.m-h1 { font: var(--font-weight-800) var(--font-size-26)/32px 'Manrope', sans-serif; color: var(--c-ink); }
+.m-sub { font: var(--font-weight-500) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink-2); margin-top: var(--spacing-8); }
+.m-card {
+  background: var(--c-white); border: 1px solid var(--c-border-plate); border-radius: var(--radius-16);
+  padding: var(--spacing-24); margin-top: var(--spacing-16);
+}
+.m-card__title { font: var(--font-weight-700) var(--font-size-16)/24px 'Manrope', sans-serif; color: var(--c-ink); }
+.m-card__hint { font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); margin-top: var(--spacing-4); }
+.m-row-between { display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-16); flex-wrap: wrap; }
+

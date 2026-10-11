@@ -1,0 +1,56 @@
+.m-tabs { display: flex; gap: var(--spacing-4); flex-wrap: wrap; border-bottom: 1.5px solid var(--c-border-plate); }
+.m-tab {
+  height: 40px; padding: 0 var(--spacing-12); border: none; border-bottom: 2px solid transparent; border-radius: 0;
+  background: transparent; color: var(--c-ink-2); cursor: pointer; margin-bottom: -1.5px;
+  font: var(--font-weight-700) var(--font-size-14)/20px 'Manrope', sans-serif; display: inline-flex; align-items: center; gap: var(--spacing-8);
+}
+.m-tab:hover { color: var(--c-ink); }
+.m-tab[data-on="1"] { border-bottom-color: var(--c-action); color: var(--c-action-deep); }
+.m-tab__n {
+  height: 20px; padding: 0 var(--spacing-8); border-radius: var(--radius-full); background: var(--c-surface-3);
+  display: inline-flex; align-items: center; font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif;
+}
+.m-tab[data-on="1"] .m-tab__n { background: var(--c-chip-tint); }
+.m-titlerow { display: flex; align-items: center; gap: var(--spacing-16); flex-wrap: wrap; }
+.m-progress { display: flex; align-items: center; gap: var(--spacing-16); margin-top: var(--spacing-16); }
+.m-titlerow .m-progress { flex: 1; min-width: 240px; margin-top: 0; }
+.m-progress__bar { flex: 1; height: 4px; border-radius: var(--radius-full); background: var(--c-action-tint); overflow: hidden; }
+.m-progress__fill { height: 100%; border-radius: var(--radius-full); background: linear-gradient(90deg, var(--c-prog-1), var(--c-prog-2) 60%, var(--c-prog-3)); }
+.m-progress__fill[data-full="1"] { background: var(--c-prog-done); }
+.m-progress__label { font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); white-space: nowrap; }
+.m-titlerow__search { margin-left: auto; width: 320px; max-width: 100%; }
+.m-titlerow--b { align-items: flex-start; }
+.m-titlerow > .m-progress { flex: 1; min-width: 240px; margin-top: 0; }
+.m-titlerow__side { margin-left: auto; width: 320px; max-width: 100%; display: flex; flex-direction: column; gap: var(--spacing-8); }
+.m-titlerow__side .m-titlerow__search { margin-left: 0; width: 100%; }
+.m-titlerow__side .m-progress { margin-top: 0; }
+.m-tabs__sep { flex: 1; }
+.m-qlayout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: var(--spacing-16); align-items: start; margin-top: var(--spacing-16); }
+.m-qnav { position: sticky; top: 64px; background: var(--c-white); border: 1px solid var(--c-border-plate); border-radius: var(--radius-16); padding: var(--spacing-16) var(--spacing-8); }
+.m-qnav .m-progress { margin: 0 var(--spacing-8) var(--spacing-12); flex-direction: column; align-items: stretch; gap: var(--spacing-8); }
+.m-qnav .m-progress__bar { flex: none; order: 2; }
+.m-qnav__list { display: flex; flex-direction: column; gap: var(--spacing-4); }
+.m-qnav__item {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-8); height: 40px; padding: 0 var(--spacing-8);
+  border: none; border-radius: var(--radius-8); background: transparent; cursor: pointer; text-align: left;
+  font: var(--font-weight-600) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink-2);
+}
+.m-qnav__item:hover { background: var(--c-surface-2); }
+.m-qnav__item[data-empty="1"]:not([data-on="1"]) { color: var(--c-ink-3); }
+.m-qhead { display: flex; align-items: center; gap: var(--spacing-16); margin: 0 0 var(--spacing-12); min-height: 40px; }
+.m-qhead .m-card__title { margin: 0; }
+.m-qhead .m-toolbar { margin: 0; }
+.m-qnav__item[data-on="1"] { background: var(--c-selected); color: var(--c-selected-ink); font-weight: var(--font-weight-600); }
+.m-qnav__n { font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); }
+.m-qnav__item[data-on="1"] .m-qnav__n { color: var(--c-selected-ink); }
+.m-qnav__sep { height: 1px; background: var(--c-border-plate); margin: var(--spacing-8); }
+.m-qnav__select { display: none; }
+.m-qmain > .m-card { margin-top: 0; }
+.m-qmain .m-card__title { margin: 0; }
+.m-qmain .m-queue { margin-top: var(--spacing-16); }
+.m-titlerow .m-linkbtn { display: inline-flex; align-items: center; gap: var(--spacing-8); }
+.m-chips__sep { width: 1.5px; height: 20px; background: var(--c-border-plate); margin: 0 var(--spacing-4); }
+.m-chip:disabled { cursor: default; opacity: 1; background: var(--c-surface-2); }
+.m-toolbar { display: flex; align-items: center; gap: var(--spacing-12); flex-wrap: wrap; margin-top: var(--spacing-16); }
+.m-oldest { font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); }
+

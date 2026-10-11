@@ -1,0 +1,16 @@
+.m-overlay {
+  position: fixed; inset: 0; z-index: 40; background: rgba(16, 24, 50, 0.45);
+  display: flex; align-items: center; justify-content: center; padding: var(--spacing-24);
+}
+.m-modal {
+  background: var(--c-white); border-radius: var(--radius-28); padding: var(--spacing-24); width: min(760px, 100%);
+  max-height: calc(100vh - 48px); overflow: auto; box-shadow: var(--shadow-overlay);
+}
+.m-modal:focus, .m-viewer:focus, #m-modal-title:focus { outline: none; }
+.m-modal__head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--spacing-16); margin-bottom: var(--spacing-16); }
+.m-close {
+  width: 32px; height: 32px; border-radius: 50%;
+  border: 1.5px solid var(--c-border-field); background: var(--c-white);
+  color: var(--c-ink-2); font: var(--font-weight-700) var(--font-size-14)/20px 'Manrope', sans-serif; cursor: pointer; flex: none;
+}
+

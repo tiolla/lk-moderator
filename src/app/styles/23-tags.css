@@ -1,0 +1,10 @@
+.m-tag {
+  height: 20px; padding: 0 var(--spacing-8); border-radius: 6px; display: inline-flex; align-items: center;
+  font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; background: var(--c-surface-3); color: var(--c-ink-3);
+}
+.m-tag--repeat { background: var(--c-border-tint); color: var(--c-action-deep); }
+.m-tag--watch { background: var(--c-warn-tint); color: var(--c-warn); }
+.m-queue__name .m-tag { margin-left: var(--spacing-8); vertical-align: 1px; }
+.m-tag--changed { background: var(--c-warn-tint); color: var(--c-warn); margin-left: var(--spacing-8); }
+.m-queue__item[data-cursor="1"] { border-color: var(--c-chip-on); box-shadow: 0 0 0 3px var(--c-border-tint); }
+

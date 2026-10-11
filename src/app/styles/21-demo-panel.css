@@ -1,0 +1,43 @@
+#m-fab {
+  position: fixed; right: 20px; bottom: 20px; z-index: 60;
+  width: 52px; height: 52px; padding: 0; border-radius: 50%; cursor: pointer;
+  background: var(--c-white); border: 1.5px solid var(--c-warn-border); color: var(--c-warn);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.18);
+  display: flex; align-items: center; justify-content: center;
+  transition: background .15s ease, transform .15s ease;
+}
+#m-fab:hover { background: var(--c-warn-tint); transform: translateY(-1px); }
+#m-fab .m-fab__close { display: none; }
+html.m-demo-open #m-fab .m-fab__bug { display: none; }
+html.m-demo-open #m-fab .m-fab__close { display: block; }
+#m-demo {
+  position: fixed; right: 20px; bottom: 84px; z-index: 60;
+  width: 320px; max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 120px); overflow-y: auto;
+  background: var(--c-white); border: 1.5px solid var(--c-warn-border);
+  border-radius: var(--radius-16); padding: var(--spacing-16);
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.18);
+  transform: translateX(calc(100% + 32px)); transition: transform .22s ease;
+  visibility: hidden;
+}
+html.m-demo-open #m-demo { transform: none; visibility: visible; }
+.m-demo__title { font: var(--font-weight-700) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-warn); }
+.m-demo__hint { font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); margin-top: var(--spacing-4); }
+.m-demo__group { font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); margin: var(--spacing-16) 0 var(--spacing-8); }
+.m-demo__btn {
+  display: block; width: 100%; text-align: left; margin-top: var(--spacing-8);
+  min-height: 36px; padding: var(--spacing-8) var(--spacing-12); border-radius: var(--radius-8); cursor: pointer;
+  border: 1.5px solid var(--c-border-field); background: var(--c-white); color: var(--c-ink);
+  font: var(--font-weight-600) 13px/18px 'Manrope', sans-serif;
+}
+.m-demo__btn:hover:not(:disabled) { background: var(--c-surface-tint); border-color: var(--c-action); }
+.m-demo__btn:disabled { color: var(--c-border-control); cursor: not-allowed; }
+.m-demo__btn span { display: block; font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); margin-top: var(--spacing-4); }
+.m-demo__btn[data-tone] span { color: inherit; }
+.m-demo__btn[data-tone="show"] { background: var(--c-action-tint); color: var(--c-ink); border-color: var(--c-selected); }
+.m-demo__btn[data-tone="ok"] { background: linear-gradient(135deg, var(--c-btn-1) 0%, var(--c-btn-2) 50%, var(--c-btn-3) 100%); color: var(--c-white); border-color: transparent; box-shadow: 0 2px 10px rgba(59, 130, 246, 0.30); }
+.m-demo__btn[data-tone="warn"] { background: var(--c-warn-tint); color: var(--c-warn); border-color: var(--c-warn-border); }
+.m-demo__btn[data-tone="danger"] { background: var(--c-danger-tint); color: var(--c-danger); border-color: var(--c-danger-border); }
+.m-demo__btn[data-tone]:hover { filter: brightness(0.96); }
+.m-demo__state { font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-2); margin-top: var(--spacing-12); }
+

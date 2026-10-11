@@ -1,0 +1,15 @@
+button:focus-visible, select:focus-visible, textarea:focus-visible, [role="button"]:focus-visible {
+  outline: 2px solid var(--c-action); outline-offset: 2px;
+}
+h2.m-card__title, h2.m-pane__title { margin: 0; }
+.m-text-danger { color: var(--c-danger); }
+.m-list { margin: var(--spacing-8) 0 0; padding-left: var(--spacing-20); }
+.m-list li { margin-top: var(--spacing-4); }
+.m-linkbtn {
+  border: none; background: none; padding: 0; cursor: pointer; text-decoration: underline;
+  font: inherit; color: var(--c-action-deep);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+

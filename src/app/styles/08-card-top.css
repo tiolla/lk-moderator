@@ -1,0 +1,28 @@
+.m-crumb { display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-16); flex-wrap: wrap; }
+.m-crumb__left { display: flex; align-items: center; gap: var(--spacing-12); flex-wrap: wrap; }
+.m-crumb__pos { font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); }
+.m-auto { margin-top: var(--spacing-16); border-radius: var(--radius-12); border: 1px solid var(--c-border-plate); background: var(--c-white); }
+.m-auto--bad { border-color: var(--c-danger-border); background: var(--c-danger-tint); }
+.m-auto__head {
+  width: 100%; display: flex; align-items: center; gap: var(--spacing-12); cursor: pointer;
+  padding: var(--spacing-14) var(--spacing-20); background: none; border: none; text-align: left;
+  font: var(--font-weight-700) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink);
+}
+.m-auto--bad .m-auto__head { color: var(--c-danger); }
+.m-auto__chev { margin-left: auto; color: var(--c-ink-3); transition: transform .15s; }
+.m-auto[data-open="1"] .m-auto__chev { transform: rotate(180deg); }
+.m-auto__body { padding: 0 var(--spacing-20) var(--spacing-16); }
+.m-two { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: var(--spacing-16); align-items: start; margin-top: var(--spacing-16); }
+.m-pane { background: var(--c-white); border: 1px solid var(--c-border-plate); border-radius: var(--radius-16); padding: var(--spacing-20); }
+.m-pane--sticky { position: sticky; top: 112px; }
+.m-pane__title { font: var(--font-weight-700) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink); }
+.m-pane__hint { font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); margin-top: var(--spacing-4); }
+.m-addnote {
+  height: 28px; padding: 0 var(--spacing-8); border-radius: var(--radius-full); cursor: pointer; white-space: nowrap;
+  border: none; background: none; color: var(--c-ink-3);
+  font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif;
+}
+.m-addnote:hover { color: var(--c-action-deep); text-decoration: underline; }
+.m-field__note { font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-danger); max-width: 320px; }
+.m-pane .m-field > .m-field__note { grid-column: 2; grid-row: 1 / span 2; max-width: 224px; }
+

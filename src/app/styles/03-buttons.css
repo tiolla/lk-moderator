@@ -1,0 +1,28 @@
+.m-btn {
+  height: 36px; padding: 0 var(--spacing-20); border-radius: var(--radius-full); border: none; cursor: pointer;
+  font: var(--font-weight-600) var(--font-size-14)/20px 'Manrope', sans-serif; display: inline-flex; align-items: center; gap: var(--spacing-8);
+  white-space: nowrap; background: var(--c-white); color: var(--c-ink);
+  transition: box-shadow .15s, transform .15s, background .15s, border-color .15s;
+}
+.m-btn--lg { height: 40px; padding: 0 var(--spacing-24); }
+.m-btn--sm { height: 32px; padding: 0 var(--spacing-16); font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif; }
+.m-btn--primary {
+  background: linear-gradient(135deg, var(--c-btn-1) 0%, var(--c-btn-2) 50%, var(--c-btn-3) 100%);
+  color: var(--c-white); box-shadow: none;
+}
+.m-btn--primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--c-btn-hover-1) 0%, var(--c-btn-hover-2) 50%, var(--c-btn-hover-3) 100%);
+  box-shadow: var(--shadow-button-hover); transform: none;
+}
+.m-btn--secondary { border: 1.5px solid var(--c-action); color: var(--c-action-deep); }
+.m-btn--secondary:hover:not(:disabled) { background: var(--c-action-tint); }
+.m-btn--outline { border: 1.5px solid var(--c-border-field); color: var(--c-ink-2); }
+.m-btn--outline:hover:not(:disabled) { background: var(--c-surface-2); }
+.m-btn--warning { border: 1.5px solid var(--c-warn); color: var(--c-warn); }
+.m-btn--warning:hover:not(:disabled) { background: var(--c-warn-tint); }
+.m-btn--danger-outline { border: 1.5px solid var(--c-danger); color: var(--c-danger); }
+.m-btn--danger-outline:hover:not(:disabled) { background: var(--c-danger-tint); }
+.m-btn--danger { background: var(--c-danger); color: var(--c-white); }
+.m-btn--danger:hover:not(:disabled) { background: var(--c-danger-alt); }
+.m-btn:disabled { background: var(--c-surface-3); color: var(--c-border-control); border: 1.5px solid var(--c-border-control); box-shadow: none; cursor: not-allowed; }
+.m-btn:focus-visible, .m-chip:focus-visible, .m-input:focus-visible { outline: 2px solid var(--c-action); outline-offset: 2px; }

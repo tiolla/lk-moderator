@@ -1,0 +1,23 @@
+.m-tabs-main { display: flex; gap: var(--spacing-4); }
+.m-tabs-main button { white-space: nowrap; flex: none; }
+.m-tabs-main button {
+  height: 36px; padding: 0 var(--spacing-14); border-radius: var(--radius-8); border: none; background: transparent; cursor: pointer;
+  font: var(--font-weight-500) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink-2);
+}
+.m-tabs-main button:not([data-on="1"]):not(:disabled) { opacity: 0.82; }
+.m-tabs-main button[data-on="1"] { background: var(--c-selected); color: var(--c-selected-ink); }
+.m-tabs-main button:disabled { color: var(--c-border-control); cursor: not-allowed; background: transparent; }
+.m-studysel { display: flex; align-items: center; gap: var(--spacing-8); }
+.m-studysel__label { font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); white-space: nowrap; }
+.m-selectwrap { position: relative; display: inline-flex; align-items: center; }
+.m-selectwrap .m-select {
+  width: 208px; padding-right: var(--spacing-36);
+  font: var(--font-weight-600) 13px/18px 'Manrope', sans-serif;
+  appearance: none; -webkit-appearance: none;
+}
+.m-selectwrap__chev {
+  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  pointer-events: none; color: var(--c-ink-3);
+}
+.m-brand, .m-header__user { white-space: nowrap; }
+

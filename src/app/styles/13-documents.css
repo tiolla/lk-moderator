@@ -1,0 +1,13 @@
+.m-docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--spacing-12); margin-top: var(--spacing-16); }
+.m-doc { border: 1px solid var(--c-border-plate); border-radius: var(--radius-12); padding: var(--spacing-16); background: var(--c-surface-2); }
+.m-doc__head { display: flex; align-items: center; gap: var(--spacing-12); }
+.m-doc__icon {
+  width: 40px; height: 40px; border-radius: var(--radius-12); flex: none; background: var(--c-action-tint); color: var(--c-action-deep);
+  display: flex; align-items: center; justify-content: center; font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif;
+}
+.m-doc__name { font: var(--font-weight-700) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink); overflow-wrap: anywhere; }
+.m-doc__meta { font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); margin-top: var(--spacing-4); }
+.m-doc__actions { display: flex; flex-wrap: wrap; gap: var(--spacing-8); margin-top: var(--spacing-12); align-items: center; }
+.m-doc__tools { display: flex; flex-wrap: wrap; align-items: center; gap: var(--spacing-8); margin-top: var(--spacing-12); }
+.m-doc__zoom { font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); min-width: 40px; text-align: center; }
+

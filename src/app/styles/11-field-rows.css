@@ -1,0 +1,42 @@
+.m-section-title {
+  font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink); letter-spacing: 0.5px; text-transform: uppercase;
+  padding: var(--spacing-16) 0 var(--spacing-8); border-bottom: 1.5px solid var(--c-border-tint); margin-top: var(--spacing-8);
+}
+.m-field {
+  display: grid; grid-template-columns: 240px minmax(0, 1fr) 320px; gap: var(--spacing-16); align-items: center;
+  padding: var(--spacing-12) var(--spacing-8); margin: 0 -8px; border-bottom: 1px solid var(--c-divider); border-radius: var(--radius-8);
+}
+.m-field[data-flag="1"] { background: var(--c-danger-tint); }
+.m-anketa .m-field { grid-template-columns: 240px minmax(0, 1fr) auto; }
+.m-anketa .m-field > .m-input { width: 320px; }
+.m-anketa .m-addnote { border: none; background: none; color: var(--c-ink-3); padding: 0 var(--spacing-8); }
+.m-anketa .m-addnote:hover { color: var(--c-action-deep); text-decoration: underline; }
+.m-anketa { display: grid; grid-template-columns: 232px minmax(0, 1fr); gap: var(--spacing-16); align-items: start; margin-top: var(--spacing-16); }
+.m-srail {
+  position: sticky; top: 112px; display: flex; flex-direction: column; gap: var(--spacing-4); padding: var(--spacing-12);
+  background: var(--c-white); border: 1px solid var(--c-border-plate); border-radius: var(--radius-16);
+}
+.m-srail__title { font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); padding: var(--spacing-4) var(--spacing-8) var(--spacing-8); }
+.m-srail__item {
+  display: flex; align-items: center; gap: var(--spacing-8); min-height: 36px; padding: var(--spacing-8); border-radius: var(--radius-8);
+  border: none; background: none; cursor: pointer; text-align: left;
+  font: var(--font-weight-600) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink-2);
+}
+.m-srail__item:hover { background: var(--c-surface-2); }
+.m-srail__item[data-on="1"] { background: var(--c-action-tint); color: var(--c-action-deep); }
+.m-srail__mark { width: 20px; flex: none; font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); text-align: center; }
+.m-srail__item[data-seen="1"] .m-srail__mark { color: var(--c-ok-text); }
+.m-anketa__top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--spacing-16); flex-wrap: wrap; }
+.m-srail__name { flex: 1 1 auto; min-width: 0; }
+.m-srail__item .m-chip__count { background: var(--c-danger-tint); color: var(--c-danger); }
+.m-srail__foot { font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); padding: var(--spacing-8) var(--spacing-8) var(--spacing-4); border-top: 1px solid var(--c-divider); margin-top: var(--spacing-4); }
+.m-anketa__head { font: var(--font-weight-700) 20px/28px 'Manrope', sans-serif; color: var(--c-ink); margin: 0; }
+.m-pane .m-field { grid-template-columns: minmax(0, 1fr) auto; gap: var(--spacing-4) var(--spacing-12); align-items: center; }
+.m-pane .m-field__label { grid-column: 1; grid-row: 1; font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; }
+.m-pane .m-field__value { grid-column: 1; grid-row: 2; }
+.m-pane .m-field > .m-input, .m-pane .m-field > .m-addnote { grid-column: 2; grid-row: 1 / span 2; }
+.m-pane .m-field > .m-input { width: 224px; }
+.m-field__label { font: var(--font-weight-500) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink-3); }
+.m-field__value { font: var(--font-weight-600) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink); overflow-wrap: anywhere; }
+.m-field__value--empty { color: var(--c-border-control); font-weight: var(--font-weight-500); }
+

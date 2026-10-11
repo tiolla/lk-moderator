@@ -1,0 +1,28 @@
+.m-steps { margin-top: var(--spacing-16); }
+.m-steps__cap { font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); margin-bottom: var(--spacing-8); }
+.m-steps__row { display: flex; gap: var(--spacing-8); flex-wrap: wrap; }
+.m-step {
+  min-width: 112px; padding: var(--spacing-8) var(--spacing-12); border-radius: var(--radius-12); cursor: pointer; text-align: left;
+  border: 1.5px solid var(--c-border-plate); background: var(--c-white);
+  display: inline-flex; flex-direction: column; gap: 0;
+  font: var(--font-weight-700) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink);
+}
+.m-step small { font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); }
+.m-step:hover:not(:disabled) { border-color: var(--c-chip-on); }
+.m-step[data-on="1"] { border-color: var(--c-chip-on); background: var(--c-chip-tint); color: var(--c-action-deep); box-shadow: 0 0 0 3px var(--c-border-tint); }
+.m-step[data-state="done"] small { color: var(--c-ok-text); }
+.m-step[data-state="review"] small { color: var(--c-action-deep); }
+.m-step[data-state="back"] small, .m-step[data-state="noshow"] small, .m-step[data-state="dropped"] small { color: var(--c-danger); }
+.m-step:disabled { cursor: default; background: var(--c-surface-2); color: var(--c-ink-3); }
+.m-etaps { margin-top: var(--spacing-12); }
+.m-etap {
+  display: inline-flex; align-items: center; height: 28px; padding: 0 var(--spacing-16); border-radius: var(--radius-full);
+  border: 1.5px solid transparent; background: var(--c-surface-3); color: var(--c-ink-3);
+  font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; white-space: nowrap; cursor: pointer;
+}
+.m-etap:disabled { cursor: default; }
+.m-etap[data-on="1"] { box-shadow: 0 0 0 3px var(--c-border-tint); }
+.m-etap[data-state="done"] { background: var(--c-ok-tint); color: var(--c-ok-text); }
+.m-etap[data-state="now"] { background: var(--c-chip-tint); color: var(--c-action-deep); border-color: var(--c-chip-on); }
+.m-etap[data-state="error"] { background: var(--c-danger-tint); color: var(--c-danger); border-color: var(--c-danger-border); }
+

@@ -1,0 +1,19 @@
+.m-table-wrap {
+  margin-top: var(--spacing-16); overflow-x: auto; background: var(--c-white);
+  border: 1px solid var(--c-border-plate); border-radius: var(--radius-16);
+}
+.m-table { border-collapse: collapse; width: 100%; font: var(--font-weight-500) 13px/18px 'Manrope', sans-serif; }
+.m-table th {
+  text-align: left; white-space: nowrap; cursor: pointer; padding: var(--spacing-12);
+  font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3);
+  border-bottom: 1px solid var(--c-border-plate); background: var(--c-white);
+}
+.m-table th[data-on="1"] { color: var(--c-action-deep); }
+.m-table td { padding: var(--spacing-12); border-bottom: 1px solid var(--c-divider); color: var(--c-ink-2); vertical-align: middle; }
+.m-table td.m-table__nw { white-space: nowrap; }
+.m-table tbody tr { cursor: pointer; }
+.m-table tbody tr:hover { background: var(--c-surface-tint); }
+.m-table tbody tr:last-child td { border-bottom: none; }
+.m-table__strong { font: var(--font-weight-700) 13px/18px 'Manrope', sans-serif; color: var(--c-ink); }
+.m-pager { display: flex; align-items: center; justify-content: flex-end; gap: var(--spacing-12); margin-top: var(--spacing-12); font: var(--font-weight-600) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); }
+

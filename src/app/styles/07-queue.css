@@ -1,0 +1,9 @@
+.m-queue { display: flex; flex-direction: column; gap: var(--spacing-8); margin-top: var(--spacing-16); }
+.m-queue__item {
+  display: grid; grid-template-columns: 40px minmax(0, 1fr) auto auto; gap: var(--spacing-16); align-items: center;
+  background: var(--c-white); border: 1px solid var(--c-border-plate); border-radius: var(--radius-12); padding: var(--spacing-12) var(--spacing-16);
+}
+.m-queue__item .m-avatar { width: 40px; height: 40px; background: var(--c-surface-3); color: var(--c-ink-2); }
+.m-queue__item:not(:hover) .m-queue__go:not(:focus-visible) { border-color: transparent; background: transparent; }
+.m-queue__what { font-weight: var(--font-weight-700); color: var(--c-ink-2); }
+

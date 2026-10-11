@@ -1,0 +1,13 @@
+.m-input, .m-select, .m-textarea {
+  width: 100%; box-sizing: border-box; height: 36px; padding: 0 var(--spacing-12);
+  border: 1.5px solid var(--c-border-field); border-radius: var(--radius-12); background: var(--c-white);
+  font: var(--font-weight-500) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink); outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.m-textarea { height: auto; min-height: 60px; padding: var(--spacing-8) var(--spacing-12); resize: vertical; }
+.m-input::placeholder, .m-textarea::placeholder { color: var(--c-border-control); }
+.m-input:focus, .m-select:focus, .m-textarea:focus { border-color: var(--c-action); box-shadow: var(--shadow-focus-field);    }
+.m-input--filled { border-color: var(--c-danger); }
+.m-label { font: var(--font-weight-600) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink); }
+.m-hint { font: var(--font-weight-500) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); }
+

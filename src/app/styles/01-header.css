@@ -1,0 +1,17 @@
+.m-header {
+  position: sticky; top: 0; z-index: 20; height: 64px;
+  display: flex; align-items: center; gap: var(--spacing-24); padding: 0 var(--spacing-32);
+  background: var(--c-white); border-bottom: 1px solid var(--c-border-plate);
+}
+.m-brand__logo { display: block; height: 44px; width: auto; color: var(--c-navy-900); }
+.m-brand { display: flex; align-items: center; gap: var(--spacing-12); font: var(--font-weight-800) var(--font-size-16)/24px 'Manrope', sans-serif; color: var(--c-ink); }
+.m-header__role { font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif; color: var(--c-ink-3); letter-spacing: 0.5px; text-transform: uppercase; }
+.m-header__spacer { flex: 1; }
+.m-header__user { display: flex; align-items: center; gap: var(--spacing-8); font: var(--font-weight-600) var(--font-size-14)/20px 'Manrope', sans-serif; color: var(--c-ink-2); }
+.m-avatar {
+  width: 32px; height: 32px; border-radius: 50%; flex: none; color: var(--c-white);
+  display: flex; align-items: center; justify-content: center; font: var(--font-weight-700) var(--font-size-12)/16px 'Manrope', sans-serif;
+  background: var(--c-step-on);
+}
+.m-avatar--teal { background: var(--c-action-deep); }
+
